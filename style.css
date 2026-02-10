@@ -89,6 +89,14 @@ h1.glitch {
     transition: transform 0.5s;
 }
 
+//概要部分の枠設定
+.gaiyou {
+    background-color: #1e1e1e !important; 
+    border-top: 2px solid #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+    padding: 10px 0;
+    color: #ffffff;
+
 // グリッドレイアウト
 .container {
     padding: 20px;
