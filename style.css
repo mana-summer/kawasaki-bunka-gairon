@@ -9,8 +9,8 @@
 }
 
 body {
-  background-color: var(--heavy-black);
-  color: var(--white);
+  background-color: #1e1e1e !important;
+  color: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   cursor: none; // マウスカーソルを自作するため
