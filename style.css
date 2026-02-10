@@ -75,7 +75,7 @@ h1.glitch {
 // 画像の大きさ
 .full-width-banner {
     width: 100%;
-    margin: 40px 0; 
+    margin: 0; 
     overflow: hidden;
     line-height: 0; // 画像の下にできる謎の隙間を消す
 }
@@ -90,7 +90,7 @@ h1.glitch {
   
 // グリッドレイアウト
 .container {
-    padding: 10px;
+    padding: 0px;
 }
 
 .content-grid {
