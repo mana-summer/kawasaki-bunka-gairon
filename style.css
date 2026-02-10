@@ -1,5 +1,5 @@
 html, body {
-    background: #0059ff !important;
+    background: #6fff00 !important;
 }
 
 // 基本設定
@@ -24,7 +24,6 @@ body {
 .cursor {
     width: 20px;
     height: 20px;
-    background-color: var(--neon-yellow);
     border-radius: 50%;
     position: fixed; // 画面に対して固定
     top: 0;
