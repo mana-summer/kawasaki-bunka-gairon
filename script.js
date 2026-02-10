@@ -15,25 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseleave', () => {
         cursor.style.opacity = "0";
     });
-
-　　// Intersection Observerを使って、画像が表示されたらクラスを付与
-　　const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateX(0)";
-        }
-    });
-});
-
-// 対象の要素に初期スタイルを設定
-const banners = document.querySelectorAll('.full-width-banner');
-banners.forEach(b => {
-    b.style.opacity = "0";
-    b.style.transform = "translateX(-50px)";
-    b.style.transition = "all 1s ease-out";
-    observer.observe(b);
-});
     
     // 全てのインタラクティブな要素に対してホバーエフェクトを適用する
     const targetElements = document.querySelectorAll('a, button, .grid-item, .nav-link');
