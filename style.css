@@ -99,11 +99,11 @@ h1.glitch {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .grid-item {
-    padding: 0px;
+    padding: 40px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
