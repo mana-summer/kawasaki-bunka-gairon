@@ -165,11 +165,13 @@ h1.glitch {
 
 @media (max-width: 480px) {
     .content-grid { grid-template-columns: 1fr; 
+       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
        flex-direction: column; /* 横並びを縦並びに変更 */
     }
     .grid-item {
         width: 100%;
         min-width: 100%;
     }
+}
     h1.glitch { font-size: 15vw; }
 } 
