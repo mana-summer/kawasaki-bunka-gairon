@@ -1,1 +1,115 @@
+// 基本設定
+:root {
+  --neon-pink: #ff00ff;
+  --neon-yellow: #6fff00;
+  --heavy-black: #1e1e1e;
+  --pure-red: #ff0000;
+  --pure-blue: #0059ff;
+}
 
+body {
+  background-color: var(--heavy-black);
+  color: white;
+  font-family: 'Helvetica Neue', 'Arial', 'Avenir Next', 'Hiragino Kaku Gothic ProN', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+
+// ノイズとテクスチャ
+.noise-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 100;
+}
+
+// ヘッダー
+header {
+  padding: 2rem;
+  border-bottom: 10px solid var(--pure-red);
+  transform: rotate(-2deg); /* 斜めに傾ける */
+  background: var(--neon-yellow);
+  color: black;
+}
+
+#main-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+}
+
+// ナビゲーション
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  background: var(--pure-blue);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  background: var(--neon-pink);
+  color: black;
+}
+
+// 流れる文字
+.marquee {
+  background: var(--pure-red);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.marquee span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+// コンテンツ
+.content-box {
+  padding: 4rem 2rem;
+  border-left: 20px solid var(--neon-pink);
+  margin: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  background: white;
+  color: black;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+button {
+  background: var(--neon-pink);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: var(--neon-yellow);
+}
