@@ -56,28 +56,10 @@ h1.glitch {
     gap: 40px;
 }
 
-// リンク文字のスタイル
-.sticky-nav a {
-    color: #ffffff !important; // 文字を真っ白に
-    text-decoration: none;
-    font-weight: 900; // 極太にする
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    position: relative;
-    padding: 5px 10px;
-}
-
 // ホバーした時の演出
 .sticky-nav a:hover {
     color: #000000 !important; // 文字を黒に反転
     background-color: #ff00ff;
-}
-
-// アクティブなリンクの装飾
-.sticky-nav a.active {
-    border-bottom: 4px solid #ff00ff;
 }
 
 // 画像の大きさ
