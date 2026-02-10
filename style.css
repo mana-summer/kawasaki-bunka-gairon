@@ -42,7 +42,8 @@ h1.glitch {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #1e1e1e;
+    background-color: #1e1e1e;
+    color: #ffffff;
     padding: 10px 0;
 }
 
