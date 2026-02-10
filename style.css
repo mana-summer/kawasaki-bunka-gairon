@@ -100,7 +100,6 @@ h1.glitch {
 .content-grid {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0px;
     margin-top: 0px;
     padding: 20px;
@@ -120,22 +119,20 @@ h1.glitch {
 }
 
 .grid-item.big { 
-  grid-column: 1 / 5;
+grid-column: 1 / 5;
   grid-row: 1 / 1;
-  box-sizing: border-box;
 }
 .grid-item.kawasakithree {
   grid-row: 2 / 2;
-  box-sizing: border-box;
 }
 .grid-item.tate {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-.grid-item.red { background: #ff3d3d; color: #ffffff; box-sizing: border-box; }
-.grid-item.yellow { background: #009900; color: #ffffff;  box-sizing: border-box; }
-.grid-item.blue { background: #2d2dff; color: #ffffff; box-sizing: border-box; }
-.grid-item.black { background: #1e1e1e; color: #ffffff; box-sizing: border-box; }
+.grid-item.red { background: #ff3d3d; color: #ffffff; }
+.grid-item.yellow { background: #009900; color: #ffffff; }
+.grid-item.blue { background: #2d2dff; color: #ffffff; }
+.grid-item.black { background: #1e1e1e; color: #ffffff; }
 
 .grid-item h3 {
     font-size: 2.5rem;
