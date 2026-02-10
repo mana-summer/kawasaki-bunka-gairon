@@ -125,3 +125,9 @@ h1.glitch {
     .grid-item.large { grid-column: span 1; }
     h1.glitch { font-size: 15vw; }
 } 
+
+@media (max-width: 480px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .grid-item.large { grid-column: span 1; }
+    h1.glitch { font-size: 15vw; }
+} 
