@@ -19,30 +19,6 @@ body {
   cursor: auto;
 }
 
-// カスタムカーソル
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none; // カーソル要素がクリックを邪魔しないようにする
-  z-index: 9999;
-  transform: translate(-50%, -50%); // マウスの中心に要素を配置
-  transition: transform 0.1s ease; // 滑らかな動きにする
-    
-    // 初期状態で中心に配置するための補正
-    transform: translate(-50%, -50%);
-    display: block !important; // 強制的に表示
-}
-
-// リンクなどにホバーした時の変化をより強調する設定
-.cursor.hover {
-    transform: translate(-50%, -50%) scale(4);
-    background-color: var(--neon-pink);
-    mix-blend-mode: normal; // ホバー時は反転させずはっきりピンクにする
-}
-
 // ヘッダーの効果
 .main-header {
     height: 60vh;
