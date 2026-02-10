@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseleave', () => {
         cursor.style.opacity = "0";
     });
-    
+
     // 全てのインタラクティブな要素に対してホバーエフェクトを適用する
     const targetElements = document.querySelectorAll('a, button, .grid-item, .nav-link');
 
