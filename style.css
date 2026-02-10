@@ -61,11 +61,18 @@ h1.glitch {
 } 
 
 // 画像の大きさ
-img {
-  
-  max-width: 100%;
-  height: auto;
-  
+.full-width-banner {
+    width: 100%;
+    margin: 40px 0; 
+    overflow: hidden;
+    line-height: 0; // 画像の下にできる謎の隙間を消す
+}
+
+.full-width-banner img {
+    width: 100%; 
+    height: auto; 
+    filter: grayscale(30%) contrast(120%); // 少しストリートっぽく
+    transition: transform 0.5s;
 }
 
 // グリッドレイアウト
