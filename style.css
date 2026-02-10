@@ -110,7 +110,7 @@ h1.glitch {
     justify-content: flex-end;
 }
 
-.grid-item.large { grid-column: span 2; }
+.grid-item.large { grid-column: span 0; }
 .grid-item.red { background: #ff3d3d; color: #ffffff; }
 .grid-item.yellow { background: #009900; color: #ffffff; }
 .grid-item.blue { background: #2d2dff; color: #ffffff; }
