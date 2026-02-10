@@ -61,7 +61,7 @@ h1.glitch {
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 4;
     gap: 80px;
 }
 
@@ -87,12 +87,11 @@ h1.glitch {
     transition: transform 0.5s;
 }
 
-.grid-item.black { 
+.blackitem { 
   background: #1e1e1e; 
   color:#ffffff;
   width: 100%;
-  margin: 0; 
-  overflow: hidden;
+  height: auto; 
 }
   
 // グリッドレイアウト
@@ -121,7 +120,6 @@ h1.glitch {
 .grid-item.red { background: #ff3d3d; color: #ffffff; }
 .grid-item.yellow { background: #009900; color: #ffffff; }
 .grid-item.blue { background: #2d2dff; color: #ffffff; }
-.grid-item.black { background: #1e1e1e; color:#ffffff;}
 
 .grid-item h3 {
     font-size: 2.5rem;
