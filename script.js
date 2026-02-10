@@ -1,38 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // カスタムカーソルの動き
     const cursor = document.querySelector('.cursor');
+
+    // マウスの位置を常に追跡
     document.addEventListener('mousemove', (e) => {
+        // カーソルの中心がマウスの先端に来るように調整
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     });
 
-    // スクロール監視
-    // 画面内に要素が入ってきたら 'active' クラスを付与する
-    const observerOptions = {
-        threshold: 0.2 // 20%見えたら実行
-    };
+    // 画面からマウスが出た時に消えないようにする設定
+    document.addEventListener('mouseenter', () => {
+        cursor.style.opacity = "1";
+    });
+    document.addEventListener('mouseleave', () => {
+        cursor.style.opacity = "0";
+    });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
+    // 全てのインタラクティブな要素に対してホバーエフェクトを適用する
+    const targetElements = document.querySelectorAll('a, button, .grid-item, .nav-link');
+
+    targetElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.classList.add('hover');
         });
-    }, observerOptions);
-
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
-
-    // ホバー時にカーソルを大きくする演出
-    const links = document.querySelectorAll('a, button, .grid-item');
-    links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(4)';
-            cursor.style.background = 'rgba(255, 255, 255, 0.5)';
-        });
-        link.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.background = 'var(--neon-yellow)';
+        el.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
         });
     });
 });
