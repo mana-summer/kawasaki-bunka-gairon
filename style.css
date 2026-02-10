@@ -60,6 +60,14 @@ h1.glitch {
     font-size: 1.2rem;
 } 
 
+// 画像の大きさ
+img {
+  
+  max-width: 100%;
+  height: auto;
+  
+}
+
 // グリッドレイアウト
 .container {
     padding: 20px;
