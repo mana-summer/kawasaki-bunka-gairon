@@ -1,7 +1,3 @@
-html, body {
-    background: #ff0000 !important;
-}
-
 // 基本設定
 :root {
   --neon-pink: #ff00ff;
@@ -56,7 +52,7 @@ h1.glitch {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
+    background: #1e1e1e;
     padding: 10px 0;
 }
 
