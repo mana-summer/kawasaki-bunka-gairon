@@ -99,7 +99,7 @@ h1.glitch {
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 0px;
     margin-top: 0px;
     padding: 20px;
