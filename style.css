@@ -1,7 +1,3 @@
-html, body {
-    background: #6fff00 !important;
-}
-
 // 基本設定
 :root {
   --neon-pink: #ff00ff;
@@ -13,7 +9,7 @@ html, body {
 }
 
 body {
-  background-color: #0059ff;
+  background-color: #6fff00 !important;
   color: #1e1e1e;
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
