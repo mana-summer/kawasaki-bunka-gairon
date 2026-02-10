@@ -87,12 +87,6 @@ h1.glitch {
     transition: transform 0.5s;
 }
 
-.blackitem { 
-  background: #1e1e1e; 
-  color:#ffffff;
-  width: 100%;
-  height: auto; 
-}
   
 // グリッドレイアウト
 .container {
@@ -116,10 +110,14 @@ h1.glitch {
     justify-content: flex-end;
 }
 
-.grid-item.large { grid-column: span 0; }
+.grid-item.big { 
+grid-column: 1 / 3;
+  grid-row: 1 / 1;
+}
 .grid-item.red { background: #ff3d3d; color: #ffffff; }
 .grid-item.yellow { background: #009900; color: #ffffff; }
 .grid-item.blue { background: #2d2dff; color: #ffffff; }
+.grid-item.black { background: #1e1e1e; color: #ffffff; }
 
 .grid-item h3 {
     font-size: 2.5rem;
