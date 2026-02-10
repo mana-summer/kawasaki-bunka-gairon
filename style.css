@@ -100,6 +100,7 @@ h1.glitch {
 .content-grid {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0px;
     margin-top: 0px;
     padding: 20px;
@@ -128,10 +129,10 @@ h1.glitch {
   box-sizing: border-box;
 }
 .grid-item.tate {
-  position: absolute;
-  right: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  position: absolute;
+  right: 0;
 }
 .grid-item.red { background: #ff3d3d; color: #ffffff; box-sizing: border-box; }
 .grid-item.yellow { background: #009900; color: #ffffff;  box-sizing: border-box; }
