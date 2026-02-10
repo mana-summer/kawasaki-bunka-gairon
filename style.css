@@ -119,9 +119,10 @@ h1.glitch {
 }
 
 .grid-item.large { grid-column: span 2; }
-.grid-item.red { background: var(--pure-red); }
-.grid-item.yellow { background: var(--neon-yellow); color: #000; }
-.grid-item.blue { background: var(--pure-blue); }
+.grid-item.red { background: #ff3d3d; }
+.grid-item.yellow { background: #2dff2d; color: #1e1e1e; }
+.grid-item.blue { background: #2d2dff; }
+.grid-item.black { background: #1e1e1e; color:#ffffff; }
 
 .grid-item h3 {
     font-size: 2.5rem;
