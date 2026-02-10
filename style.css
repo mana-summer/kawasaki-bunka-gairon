@@ -1,3 +1,7 @@
+html, body {
+    background: #0059ff !important;
+}
+
 // 基本設定
 :root {
   --neon-pink: #ff00ff;
@@ -33,6 +37,13 @@ body {
     // 初期状態で中心に配置するための補正
     transform: translate(-50%, -50%);
     display: block !important; // 強制的に表示
+}
+
+// リンクなどにホバーした時の変化をより強調する設定
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    background-color: var(--neon-pink);
+    mix-blend-mode: normal; // ホバー時は反転させずはっきりピンクにする
 }
 
 // ヘッダーの効果
