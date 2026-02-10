@@ -90,6 +90,8 @@ h1.glitch {
   
 // グリッドレイアウト
 .container {
+  --_column: 1;
+  & > --_column: 3;
     padding: 0px;
 }
 
@@ -97,11 +99,11 @@ h1.glitch {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .grid-item {
-    padding: 30px;
+    padding: 0px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
