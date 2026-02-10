@@ -87,6 +87,12 @@ h1.glitch {
     transition: transform 0.5s;
 }
 
+.grid-item.black { 
+  background: #1e1e1e; 
+  color:#ffffff;
+  width: 100%;
+  height: auto;
+}
   
 // グリッドレイアウト
 .container {
