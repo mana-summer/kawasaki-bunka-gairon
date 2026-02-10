@@ -1,26 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const title = document.getElementById('main-title');
-  const button = document.getElementById('glitch-button');
+    // カスタムカーソルの動き
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
 
-  // タイトルの色がランダムに変わるコード
-  setInterval(() => {
-      const colors = ['#ff00ff', '#ffff00', '#ff0000', '#00ffff', '#ffffff'];
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      title.style.textShadow = `5px 5px 0px ${randomColor}`;
-  }, 150);
+    // スクロール監視
+    // 画面内に要素が入ってきたら 'active' クラスを付与する
+    const observerOptions = {
+        threshold: 0.2 // 20%見えたら実行
+    };
 
-  // ボタンクリック時の演出のコード
-  button.addEventListener('click', () => {
-      alert('川崎の深淵へようこそ。');
-      document.body.style.backgroundColor = '#ff0000';
-      setTimeout(() => {
-          document.body.style.backgroundColor = '#000000';
-      }, 100);
-  });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
 
-  // スクロールに合わせて要素を動かすコード
-  window.addEventListener('scroll', () => {
-      const offset = window.pageYOffset;
-      document.querySelector('.content-box').style.transform = `translateY(${offset * 0.1}px)`;
-  });
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
+
+    // ホバー時にカーソルを大きくする演出
+    const links = document.querySelectorAll('a, button, .grid-item');
+    links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            cursor.style.transform = 'scale(4)';
+            cursor.style.background = 'rgba(255, 255, 255, 0.5)';
+        });
+        link.addEventListener('mouseleave', () => {
+            cursor.style.transform = 'scale(1)';
+            cursor.style.background = 'var(--neon-yellow)';
+        });
+    });
 });
