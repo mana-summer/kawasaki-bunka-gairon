@@ -18,16 +18,15 @@ body {
 
 // カスタムカーソル
 .cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: fixed; // 画面に対して固定
-    top: 0;
-    left: 0;
-    pointer-events: none; // カーソル自体がクリックを邪魔しないようにする
-    z-index: 999999; // 最前面に持ってくる
-    mix-blend-mode: difference; // 背景色に応じて色を反転させて常に見えるようにする
-    transition: transform 0.1s ease-out; // 動きに余韻を残す
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none; // カーソル要素がクリックを邪魔しないようにする
+  z-index: 9999;
+  transform: translate(-50%, -50%); // マウスの中心に要素を配置
+  transition: transform 0.1s ease; // 滑らかな動きにする
     
     // 初期状態で中心に配置するための補正
     transform: translate(-50%, -50%);
