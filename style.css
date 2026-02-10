@@ -90,9 +90,10 @@ h1.glitch {
   
 // グリッドレイアウト
 .container {
-  --_column: 1;
-  & > --_column: 3;
-    padding: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .content-grid {
@@ -100,6 +101,7 @@ h1.glitch {
     grid-template-columns: repeat(3, 2fr);
     gap: 0px;
     margin-top: 0px;
+    box-sizing: border-box;
 }
 
 .grid-item {
@@ -108,6 +110,8 @@ h1.glitch {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .grid-item.big { 
