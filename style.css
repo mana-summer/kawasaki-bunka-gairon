@@ -27,6 +27,9 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(45deg, var(--pure-red), var(--black));
+    margin-bottom: 0;           /* ナビとの間の隙間をなくす */
+    position: relative;         /* z-indexが効くようにする */
+    z-index: 1;   
 }
 
 h1.glitch {
