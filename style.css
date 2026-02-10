@@ -1,3 +1,7 @@
+html, body {
+    background: #6fff00 !important;
+}
+
 // 基本設定
 :root {
   --neon-pink: #ff00ff;
