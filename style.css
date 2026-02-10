@@ -11,11 +11,13 @@
 body {
   min-height: 100vh;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   background-color: #6fff00;
   color: #1e1e1e;
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
+  width: 100%;
   cursor: auto;
 }
 
@@ -93,7 +95,6 @@ h1.glitch {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
 }
 
 .content-grid {
@@ -101,6 +102,8 @@ h1.glitch {
     grid-template-columns: repeat(3, 2fr);
     gap: 0px;
     margin-top: 0px;
+    padding: 20px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -111,6 +114,7 @@ h1.glitch {
     flex-direction: column;
     justify-content: flex-end;
     word-wrap: break-word;
+    min-height: auto;
     box-sizing: border-box;
 }
 
