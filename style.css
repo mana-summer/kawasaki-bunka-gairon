@@ -44,16 +44,23 @@ h1.glitch {
     background-color: #1e1e1e;
     border-bottom: 2px solid #ff00ff;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .sticky-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 40px;
+}
+
+.sticky-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 // ホバーした時の演出
