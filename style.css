@@ -129,10 +129,10 @@ h1.glitch {
   box-sizing: border-box;
 }
 .grid-item.tate {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   position: absolute;
   right: 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 .grid-item.red { background: #ff3d3d; color: #ffffff; box-sizing: border-box; }
 .grid-item.yellow { background: #009900; color: #ffffff;  box-sizing: border-box; }
