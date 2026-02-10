@@ -91,7 +91,8 @@ h1.glitch {
   background: #1e1e1e; 
   color:#ffffff;
   width: 100%;
-  height: auto;
+  margin: 0; 
+  overflow: hidden;
 }
   
 // グリッドレイアウト
