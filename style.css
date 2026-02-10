@@ -99,7 +99,10 @@ h1.glitch {
     border-bottom: 2px solid #ff00ff;
     padding: 10px 0;
     color: #ffffff;
+}
+// 説明部分の枠設定
 
+  
 // グリッドレイアウト
 .container {
     padding: 20px;
